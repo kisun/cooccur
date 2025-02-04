@@ -50,7 +50,6 @@ dim(uw_dt)
 #prepare binary matrix
 uw_dt_bin<-apply(uw_dt, 2, function(x) ifelse(x >0, 1, x))
 rownames(uw_dt_bin)<-genus
-uw_dt_bin<-uw_dt_bin[!is.na(rownames(uw_dt_bin)),]
 head(uw_dt_bin)
 dim(uw_dt_bin)
 
@@ -90,7 +89,6 @@ dim(sw_dt)
 #prepare binary matrix
 sw_dt_bin<-apply(sw_dt, 2, function(x) ifelse(x >0, 1, x))
 rownames(sw_dt_bin)<-genus
-sw_dt_bin<-sw_dt_bin[!is.na(rownames(sw_dt_bin)),]
 head(sw_dt_bin)
 # Run cooccurrence analysis
 c_sw <- print(cooccur(sw_dt_bin, spp_names = TRUE))
@@ -125,7 +123,6 @@ dim(ue_dt)
 # Prepare binary matrix
 ue_dt_bin <- apply(ue_dt, 2, function(x) ifelse(x > 0, 1, x))
 rownames(ue_dt_bin) <- genus
-ue_dt_bin<-ue_dt_bin[!is.na(rownames(ue_dt_bin)),]
 head(ue_dt_bin)
 dim(ue_dt_bin)
 
@@ -161,7 +158,6 @@ dim(se_dt)
 # Prepare binary matrix
 se_dt_bin <- apply(se_dt, 2, function(x) ifelse(x > 0, 1, x))
 rownames(se_dt_bin) <- genus
-se_dt_bin<-se_dt_bin[!is.na(rownames(se_dt_bin)),]
 head(se_dt_bin)
 
 # Run co-occurrence analysis for suburban east
