@@ -20,3 +20,8 @@ In addition, it will generate a venn diagram and you can also get a list of uniq
 You can use this to submit cooccur.R as a batch job in slurm environment eg., in csc's taito.
 
 
+# indicspecies
+For more information about indicator species analysis and indicspecies package [check out this](https://cran.r-project.org/web/packages/indicspecies/vignettes/IndicatorSpeciesAnalysis.html)
+
+### indicspecies.R
+This script performs indicator species analysis in different taxonomic levels.
